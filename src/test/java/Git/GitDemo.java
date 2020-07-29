@@ -4,7 +4,7 @@ public class GitDemo
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Git is so Cool!!!");
+		System.out.println("Git is Great!!!");
 	}
 
 }
