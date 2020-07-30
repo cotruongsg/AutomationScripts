@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Git.LoadTest01">
+      <class name="RegresstionTestCases.doCheckDropdownList">
         <methods>
-          <include name="beforeClass"/>
-          <include name="verifySearchButton"/>
+          <include name="TestCase1"/>
         </methods>
-      </class> <!-- Git.LoadTest01 -->
+      </class> <!-- RegresstionTestCases.doCheckDropdownList -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
