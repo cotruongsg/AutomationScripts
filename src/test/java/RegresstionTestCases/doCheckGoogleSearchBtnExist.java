@@ -1,4 +1,4 @@
-package Git;
+package RegresstionTestCases;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
@@ -22,7 +22,7 @@ import org.testng.annotations.BeforeClass;
 //--
 import org.testng.annotations.Test;
 
-public class LoadTest01
+public class doCheckGoogleSearchBtnExist
 {
 
   private WebDriver driver;
@@ -30,6 +30,7 @@ public class LoadTest01
   @BeforeClass
   public void beforeClass() 
   {
+	  System.setProperty("webdriver.gecko.driver", "B:\\SeleniumSource\\geckodriver\\geckodriver.exe");
       driver = new FirefoxDriver();
   }
 
