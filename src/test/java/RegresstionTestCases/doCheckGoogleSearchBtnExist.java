@@ -49,10 +49,9 @@ public class doCheckGoogleSearchBtnExist
   {
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
       driver.get("http://www.google.com");
-      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-      String search_text = "Google Search";
-      WebElement search_button = driver.findElement(By.name("btnK"));
-      String text = search_button.getAttribute("value");
-      AssertJUnit.assertEquals(text, search_text, "Text not found!");
+      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);         
+      boolean exists = driver.findElement(By.id("hplogo")).isDisplayed();
+      Assert.assertEquals(exists, true, "Google Search Button is not exist");
+      
   }
 }
