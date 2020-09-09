@@ -1,5 +1,9 @@
 package RegresstionTestCases;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
@@ -43,16 +47,12 @@ public class doCheckGoogleSearchBtnExist
   @Test
   public void verifySearchButton() 
   {
-
-      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
       driver.get("http://www.google.com");
-
+      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
       String search_text = "Google Search";
       WebElement search_button = driver.findElement(By.name("btnK"));
-
       String text = search_button.getAttribute("value");
-
-      Assert.assertEquals(text, search_text, "Text not found!");
+      AssertJUnit.assertEquals(text, search_text, "Text not found!");
   }
 }
