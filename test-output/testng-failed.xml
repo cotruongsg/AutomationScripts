@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RegresstionTestCases.doCheckGoogleSearchBtnExist">
+      <class name="RegresstionTestCases.doCheckAlertWindow">
         <methods>
-          <include name="verifySearchButton"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="GetAlertText"/>
         </methods>
-      </class> <!-- RegresstionTestCases.doCheckGoogleSearchBtnExist -->
+      </class> <!-- RegresstionTestCases.doCheckAlertWindow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

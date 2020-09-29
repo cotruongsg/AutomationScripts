@@ -2,24 +2,16 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-09T20:42:58Z" name="Default suite" finished-at="2020-09-09T20:43:06Z" duration-ms="8285">
+  <suite started-at="2020-09-17T06:17:28Z" name="Default suite" finished-at="2020-09-17T06:17:41Z" duration-ms="12513">
     <groups>
     </groups>
-    <test started-at="2020-09-09T20:42:58Z" name="Default test" finished-at="2020-09-09T20:43:06Z" duration-ms="8285">
-      <class name="RegresstionTestCases.doCheckGoogleSearchBtnExist">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:RegresstionTestCases.doCheckGoogleSearchBtnExist@17c1bced]" started-at="2020-09-09T13:42:58Z" name="beforeClass" finished-at="2020-09-09T13:43:04Z" duration-ms="6056" status="PASS">
+    <test started-at="2020-09-17T06:17:28Z" name="Default test" finished-at="2020-09-17T06:17:41Z" duration-ms="12513">
+      <class name="RegresstionTestCases.doCheckAlertWindow">
+        <test-method signature="GetAlertText()[pri:0, instance:RegresstionTestCases.doCheckAlertWindow@3ee0fea4]" started-at="2020-09-16T23:17:28Z" name="GetAlertText" finished-at="2020-09-16T23:17:41Z" duration-ms="12488" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="verifySearchButton()[pri:0, instance:RegresstionTestCases.doCheckGoogleSearchBtnExist@17c1bced]" started-at="2020-09-09T13:43:04Z" name="verifySearchButton" finished-at="2020-09-09T13:43:05Z" duration-ms="1367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchButton -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:RegresstionTestCases.doCheckGoogleSearchBtnExist@17c1bced]" started-at="2020-09-09T13:43:05Z" name="afterClass" finished-at="2020-09-09T13:43:06Z" duration-ms="847" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- RegresstionTestCases.doCheckGoogleSearchBtnExist -->
+        </test-method> <!-- GetAlertText -->
+      </class> <!-- RegresstionTestCases.doCheckAlertWindow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
