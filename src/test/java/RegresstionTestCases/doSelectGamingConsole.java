@@ -25,7 +25,7 @@ public class doSelectGamingConsole
 			  List<WebElement> litag = driver.findElements(By.xpath(li_xpath));
 			  int litag_size = litag.size();
 			  System.out.println("Li tag size is " + litag_size);			  
-			  for(int i = 0 ; i <= 7 ; i++)
+			  for(int i = 0 ; i <= litag_size-2 ; i++)
 			  {
 				  String chkbox_xpath = "//fieldset[@name='Brand']/ul[@class='facet-option-list']/li//input[contains(@id, '-" + i + "'" + ")" + "]";
 				  driver.findElement(By.xpath(chkbox_xpath)).click();
