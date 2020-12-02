@@ -57,10 +57,10 @@ public class BrowserFactory
 	        return new InternetExplorerDriver();
 	    }
         
-       // @AfterMethod
-        public void closeApp()
-        {
-        	driver.quit();
-        }
+//       // @AfterMethod
+//        public void closeApp()
+//        {
+//        	driver.quit();
+//        }
         
 }
