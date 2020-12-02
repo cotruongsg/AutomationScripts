@@ -5,16 +5,16 @@ import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-import Utils.BrowserFactory;
+import Utils.BrowserFactory_old;
 import Utils.CommonActions;
 
-public class doXpath extends BrowserFactory
+public class doXpath extends BrowserFactory_old
 {
 	  CommonActions act = new CommonActions();
 	  @Test
 	  public void doCheckXpath() throws IOException 
 	  {
-		  WebDriver driver = BrowserFactory.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
 		  driver.get("https://selenium.dev");
 		  //starts-with 
 		  //a[starts-with(@class,"nav-item") and contains(@href,"support")]

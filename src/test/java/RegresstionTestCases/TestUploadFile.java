@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import Utils.BrowserFactory;
+import Utils.BrowserFactory_old;
 import Utils.CommonActions;
 
 
@@ -17,7 +17,7 @@ public class TestUploadFile
 	  @Test
 	  public void TestUpload() throws IOException
 	  {
-		  WebDriver driver = BrowserFactory.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
 		  driver.get("https://fineuploader.com/demos.html");
 		  driver.manage().window().maximize();
 		  cact.ImplicitWait(driver, 10);

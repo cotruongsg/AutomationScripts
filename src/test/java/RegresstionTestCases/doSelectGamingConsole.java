@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import Utils.BrowserFactory;
+import Utils.BrowserFactory_old;
 import Utils.CommonActions;
 
 public class doSelectGamingConsole 
@@ -15,7 +15,7 @@ public class doSelectGamingConsole
 	  @Test
 	  public void doBestBuyGaming() throws IOException 
 	  {
-		  WebDriver driver = BrowserFactory.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
 		  driver.get("https://www.bestbuy.com/site/searchpage.jsp?st=laptop+and+computer&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys");
 		  driver.manage().window().maximize();
 		  act.WaitForElementExists(driver, 8 , "//img[@class='logo']");				  

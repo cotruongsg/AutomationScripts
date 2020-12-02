@@ -7,7 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import Utils.BrowserFactory;
+import Utils.BrowserFactory_old;
 import Utils.CommonActions;
 
 
@@ -18,7 +20,7 @@ public class TestRightAndDoubleClick
 	  @Test
 	  public void testRightandDbClick()  throws IOException
 	  {	
-		  WebDriver driver = BrowserFactory.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory.getWebDriver("firefox");
 		  driver.get("https://demoqa.com/buttons");
 		  driver.manage().window().maximize();
 		  cact.ImplicitWait(driver, 5);

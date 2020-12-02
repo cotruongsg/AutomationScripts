@@ -13,60 +13,49 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 //Class Name
 public class BrowserFactory 
 {
-        private static WebDriver driver = null;
-        
-        //@BeforeMethod
-        @SuppressWarnings({ "unchecked", "deprecation" })
-		public static WebDriver getBrowser(String browserType) throws IOException        
-        {        	
-	        if(driver == null)         
-		    {	         
-		        if(browserType.toLowerCase().equals("firefox"))	         
-			        {
-			        	//Using the Gecko Driver		
-			        	/*FirefoxProfile profile = new FirefoxProfile();
-			        	profile.setPreference("permissions.default.desktop-notification", 1); 
-			        	DesiredCapabilities capabilities=DesiredCapabilities.firefox();
-			        	capabilities.setCapability(FirefoxDriver.PROFILE, profile); */
-			        	
-			        	FirefoxProfile geoDisabled = new FirefoxProfile();
-			        	geoDisabled.setPreference("geo.enabled", false);
-			        	geoDisabled.setPreference("geo.provider.use_corelocation", false);
-			        	geoDisabled.setPreference("geo.prompt.testing", false);
-			        	geoDisabled.setPreference("geo.prompt.testing.allow", false);
-			        	DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-			        	capabilities.setCapability(FirefoxDriver.PROFILE, geoDisabled);
-		        	
-			    		/*FirefoxOptions options = new FirefoxOptions();			    		
-			    		options.addArguments("start-maximized"); 
-			    		options.addArguments("--disable-notifications");*/
-			    		System.setProperty("webdriver.gecko.driver", "B:\\SeleniumSource\\browserdriver\\geckodriver.exe");
-			    		driver = new FirefoxDriver(capabilities);
-			         
-			        }	         
-		        else if(browserType.equals("chrome"))	         
-			        {    
-		        		String exePath = "B:\\SeleniumSource\\browserdriver\\chromedriver.exe";
-				   		System.setProperty("webdriver.chrome.driver", exePath);
-				   		ChromeOptions options = new ChromeOptions();
-				   		options.setExperimentalOption("useAutomationExtension", false);
-				   		options.addArguments("start-maximized"); 	
-			   		    driver = new ChromeDriver(options);		         
-			        }	         
-		        else if(browserType.equals("ie"))	         
-			        {		         
-			        	driver = new InternetExplorerDriver();		         
-			        }
-		         
-		     }
-		     return driver;	         
-	     }
+		private static final String DRIVER_DIR = "src/test/resources/";
+	
+	    @SuppressWarnings("static-access")
+		public static WebDriver getWebDriver(String browserName) {
+	    	String bn = browserName.valueOf(browserName).toLowerCase();
+	        switch (bn)
+	        {
+	            case "chrome":
+	                return getChromeDriver();
+	            case "firefox":
+	                return getFirefoxDriver();
+	            case "internet explorer":
+	                return getInternetExplorerDriver();
+	            default:
+	                throw new IllegalArgumentException("Match case not found for browser: " 
+	                        + browserName);
+	        }
+	    }
+	
+	    private static WebDriver getChromeDriver() {	       
+	        ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--start-maximized");
+	        WebDriverManager.chromedriver().setup();
+	        return new ChromeDriver(options);
+	    }
+	
+	    private static WebDriver getFirefoxDriver() {
+	        //System.setProperty("webdriver.gecko.driver", DRIVER_DIR + "geckodriver.exe");
+	        FirefoxOptions options = new FirefoxOptions();
+	        options.addArguments("--start-maximized");
+	        WebDriverManager.firefoxdriver().setup();
+	        return new FirefoxDriver(options);
+	    }
+	
+	    private static WebDriver getInternetExplorerDriver() {
+	        System.setProperty("webdriver.ie.driver", DRIVER_DIR + "IEDriverServer.exe");
+	        return new InternetExplorerDriver();
+	    }
         
        // @AfterMethod
         public void closeApp()

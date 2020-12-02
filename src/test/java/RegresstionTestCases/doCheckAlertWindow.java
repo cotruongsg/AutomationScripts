@@ -6,10 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import Utils.BrowserFactory;
+import Utils.BrowserFactory_old;
 import Utils.CommonActions;
 
-public class doCheckAlertWindow extends BrowserFactory
+public class doCheckAlertWindow extends BrowserFactory_old
 {	  
 	
 	  CommonActions act = new CommonActions();
@@ -17,7 +17,7 @@ public class doCheckAlertWindow extends BrowserFactory
 	  @Test
 	  public void GetAlertText() throws IOException 
 	  {
-		  WebDriver driver = BrowserFactory.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
 		  driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		  act.WaitForElementExists(driver, 5 , "//input[@value='Sign in']");
 		  driver.findElement(By.xpath("//input[@value='Sign in']")).click();
