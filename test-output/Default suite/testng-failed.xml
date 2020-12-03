@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RegresstionTestCases.doCheckAlertWindow">
+      <class name="RegresstionTestCases.TestRightAndDoubleClick">
         <methods>
-          <include name="GetAlertText"/>
+          <include name="testRightandDbClick"/>
         </methods>
-      </class> <!-- RegresstionTestCases.doCheckAlertWindow -->
+      </class> <!-- RegresstionTestCases.TestRightAndDoubleClick -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
