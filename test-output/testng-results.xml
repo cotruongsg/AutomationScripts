@@ -2,16 +2,16 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-02T04:40:20Z" name="Default suite" finished-at="2020-12-02T04:40:29Z" duration-ms="8977">
+  <suite started-at="2020-12-08T04:26:51Z" name="Default suite" finished-at="2020-12-08T04:26:58Z" duration-ms="6886">
     <groups>
     </groups>
-    <test started-at="2020-12-02T04:40:20Z" name="Default test" finished-at="2020-12-02T04:40:29Z" duration-ms="8977">
-      <class name="RegresstionTestCases.TestRightAndDoubleClick">
-        <test-method signature="testRightandDbClick()[pri:0, instance:RegresstionTestCases.TestRightAndDoubleClick@247bddad]" started-at="2020-12-01T20:40:20Z" name="testRightandDbClick" finished-at="2020-12-01T20:40:29Z" duration-ms="8942" status="PASS">
+    <test started-at="2020-12-08T04:26:51Z" name="Default test" finished-at="2020-12-08T04:26:58Z" duration-ms="6886">
+      <class name="RegresstionTestCases.doCheckGoogleSearchBtnExist">
+        <test-method signature="verifySearchButton()[pri:0, instance:RegresstionTestCases.doCheckGoogleSearchBtnExist@1ff4931d]" started-at="2020-12-07T20:26:51Z" name="verifySearchButton" finished-at="2020-12-07T20:26:58Z" duration-ms="6873" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRightandDbClick -->
-      </class> <!-- RegresstionTestCases.TestRightAndDoubleClick -->
+        </test-method> <!-- verifySearchButton -->
+      </class> <!-- RegresstionTestCases.doCheckGoogleSearchBtnExist -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,9 +1,10 @@
 package RegresstionTestCases;
 
 import org.testng.annotations.Test;
-import java.util.Iterator;
-import java.util.List;
 
+import Utils.BrowserFactory;
+
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,12 +18,7 @@ public class doCheckDropdownList
 	public void TestCase1() throws InterruptedException
 	{
 	
-		//Using the Gecko Driver
-		System.setProperty("webdriver.gecko.driver", "B:\\SeleniumSource\\geckodriver\\geckodriver.exe");
-		
-		//Defining driver
-		WebDriver driver;		
-		driver = new FirefoxDriver();
+		WebDriver driver = BrowserFactory.getWebDriver("firefox");		
 		
 		//Launching the dropdown Page
 		driver.get("https://techcanvass.com/examples/register.html");

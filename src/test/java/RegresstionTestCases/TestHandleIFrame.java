@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-import Utils.BrowserFactory_old;
+import Utils.BrowserFactory;
 import Utils.CommonActions;
 
 public class TestHandleIFrame 
@@ -16,7 +16,7 @@ public class TestHandleIFrame
 	  @Test
 	  public void TestDragAndDrop() throws IOException
 	  {
-		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory.getWebDriver("firefox");	
 		  driver.get("https://jqueryui.com/droppable/");
 		  driver.manage().window().maximize();
 		  cact.ImplicitWait(driver, 5);

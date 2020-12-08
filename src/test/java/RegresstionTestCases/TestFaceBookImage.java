@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import Utils.BrowserFactory_old;
+import Utils.BrowserFactory;
 import Utils.CommonActions;
 
 public class TestFaceBookImage 
@@ -14,7 +14,7 @@ public class TestFaceBookImage
 	  @Test
 	  public void testImageOperation()  throws IOException
 	  {
-		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory.getWebDriver("firefox");	
 		  driver.get("https://www.facebook.com");
 		  driver.manage().window().maximize();
 		  cact.ImplicitWait(driver, 5);

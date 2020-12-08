@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RegresstionTestCases.TestRightAndDoubleClick">
+      <class name="RegresstionTestCases.doSelectGamingConsole">
         <methods>
-          <include name="testRightandDbClick"/>
+          <include name="doBestBuyGaming"/>
         </methods>
-      </class> <!-- RegresstionTestCases.TestRightAndDoubleClick -->
+      </class> <!-- RegresstionTestCases.doSelectGamingConsole -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

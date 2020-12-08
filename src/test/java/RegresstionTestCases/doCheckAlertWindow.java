@@ -1,15 +1,14 @@
 package RegresstionTestCases;
 
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import Utils.BrowserFactory_old;
+import Utils.BrowserFactory;
 import Utils.CommonActions;
 
-public class doCheckAlertWindow extends BrowserFactory_old
+public class doCheckAlertWindow extends BrowserFactory
 {	  
 	
 	  CommonActions act = new CommonActions();
@@ -17,7 +16,7 @@ public class doCheckAlertWindow extends BrowserFactory_old
 	  @Test
 	  public void GetAlertText() throws IOException 
 	  {
-		  WebDriver driver = BrowserFactory_old.getBrowser("firefox");
+		  WebDriver driver = BrowserFactory.getWebDriver("firefox");
 		  driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		  act.WaitForElementExists(driver, 5 , "//input[@value='Sign in']");
 		  driver.findElement(By.xpath("//input[@value='Sign in']")).click();
