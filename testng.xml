@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--Run by Class or Package-->
+<!--
 <suite name="RegressrionTCs">
-  <test thread-count="5" name="SeleniumDemo">
+  <test name="TestNG DEMO">   
     <classes>
       <class name="RegresstionTestCases.doCheckDropdownList"/>
       <class name="RegresstionTestCases.doCheckGoogleSearchBtnExist"/>
       <class name="RegresstionTestCases.doGetTagValue"/>
     </classes>
-  </test> <!-- SeleniumDemo -->
-</suite> <!-- RegressrionTCs -->
+    
+	<packages>
+		<package name="TestNGTutorials"/>
+	</packages>    
+  </test> 
+</suite>
+-->
+
+<!--XML for Groups TCs-->
+<suite name="Sample Suite">
+  <test name="testing">
+  	<groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+	<packages>
+		<package name="TestNGTutorials"/>
+	</packages>    
+	<!--
+    <classes>
+       <class name="TestNGTutorials.TestNGGroupExamples" />
+    </classes>
+	-->
+  </test>
+</suite>
