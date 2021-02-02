@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" parallel="classes" name="Failed suite [Parallel test suite]">
+  <parameter name="browser" value="Firefox"/>
+  <test parallel="classes" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <groups>
+      <run>
+        <include name="demo.*"/>
+      </run>
+    </groups>
     <classes>
-      <class name="RegresstionTestCases.TestGoogleSearchObjects">
+      <class name="RegresstionTestCases.Groups">
         <methods>
-          <include name="GoogleSearch"/>
+          <include name="click_element" invocation-numbers="0"/>
         </methods>
-      </class> <!-- RegresstionTestCases.TestGoogleSearchObjects -->
+      </class> <!-- RegresstionTestCases.Groups -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

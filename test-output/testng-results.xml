@@ -1,42 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="5" passed="5" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-22T05:52:24Z" name="Sample Suite" finished-at="2020-12-22T05:52:24Z" duration-ms="26">
+  <suite started-at="2021-02-02T22:20:06Z" name="Parallel test suite" finished-at="2021-02-02T22:20:24Z" duration-ms="18044">
     <groups>
-      <group name="Regression">
-        <method signature="TestNGGroupExamples.testCase1()[pri:0, instance:TestNGTutorials.TestNGGroupExamples@3c3d9b6b]" name="testCase1" class="TestNGTutorials.TestNGGroupExamples"/>
-        <method signature="TestNGGroupExamples.testCase2()[pri:0, instance:TestNGTutorials.TestNGGroupExamples@3c3d9b6b]" name="testCase2" class="TestNGTutorials.TestNGGroupExamples"/>
-        <method signature="TestNGGroupExamples.testCase4()[pri:0, instance:TestNGTutorials.TestNGGroupExamples@3c3d9b6b]" name="testCase4" class="TestNGTutorials.TestNGGroupExamples"/>
-        <method signature="TestNGGroupSecondExamples.testCase5()[pri:0, instance:TestNGTutorials.TestNGGroupSecondExamples@22fcf7ab]" name="testCase5" class="TestNGTutorials.TestNGGroupSecondExamples"/>
-        <method signature="TestNGGroupSecondExamples.testCase6()[pri:0, instance:TestNGTutorials.TestNGGroupSecondExamples@22fcf7ab]" name="testCase6" class="TestNGTutorials.TestNGGroupSecondExamples"/>
-      </group> <!-- Regression -->
+      <group name="demo1">
+        <method signature="Groups.checkTitle(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" name="checkTitle" class="RegresstionTestCases.Groups"/>
+      </group> <!-- demo1 -->
+      <group name="demo2">
+        <method signature="Groups.click_element(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" name="click_element" class="RegresstionTestCases.Groups"/>
+      </group> <!-- demo2 -->
     </groups>
-    <test started-at="2020-12-22T05:52:24Z" name="testing" finished-at="2020-12-22T05:52:24Z" duration-ms="26">
-      <class name="TestNGTutorials.TestNGGroupExamples">
-        <test-method signature="testCase1()[pri:0, instance:TestNGTutorials.TestNGGroupExamples@3c3d9b6b]" started-at="2020-12-21T21:52:24Z" name="testCase1" finished-at="2020-12-21T21:52:24Z" duration-ms="6" status="PASS">
+    <test started-at="2021-02-02T22:20:06Z" name="FirefoxTest" finished-at="2021-02-02T22:20:24Z" duration-ms="18044">
+      <class name="RegresstionTestCases.Groups">
+        <test-method signature="checkTitle(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" started-at="2021-02-02T14:20:06Z" name="checkTitle" finished-at="2021-02-02T14:20:15Z" duration-ms="9043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method signature="testCase4()[pri:0, instance:TestNGTutorials.TestNGGroupExamples@3c3d9b6b]" started-at="2020-12-21T21:52:24Z" name="testCase4" finished-at="2020-12-21T21:52:24Z" duration-ms="0" status="PASS">
+        </test-method> <!-- checkTitle -->
+        <test-method signature="click_element(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" started-at="2021-02-02T14:20:15Z" name="click_element" finished-at="2021-02-02T14:20:24Z" duration-ms="8943" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase4 -->
-        <test-method signature="testCase2()[pri:0, instance:TestNGTutorials.TestNGGroupExamples@3c3d9b6b]" started-at="2020-12-21T21:52:24Z" name="testCase2" finished-at="2020-12-21T21:52:24Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-      </class> <!-- TestNGTutorials.TestNGGroupExamples -->
-      <class name="TestNGTutorials.TestNGGroupSecondExamples">
-        <test-method signature="testCase6()[pri:0, instance:TestNGTutorials.TestNGGroupSecondExamples@22fcf7ab]" started-at="2020-12-21T21:52:24Z" name="testCase6" finished-at="2020-12-21T21:52:24Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase6 -->
-        <test-method signature="testCase5()[pri:0, instance:TestNGTutorials.TestNGGroupSecondExamples@22fcf7ab]" started-at="2020-12-21T21:52:24Z" name="testCase5" finished-at="2020-12-21T21:52:24Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase5 -->
-      </class> <!-- TestNGTutorials.TestNGGroupSecondExamples -->
-    </test> <!-- testing -->
-  </suite> <!-- Sample Suite -->
+        </test-method> <!-- click_element -->
+      </class> <!-- RegresstionTestCases.Groups -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Parallel test suite -->
 </testng-results>

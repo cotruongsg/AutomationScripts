@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="RegresstionTestCases.TestGoogleSearchObjects">
+      <class name="RegresstionTestCases.Groups">
         <methods>
-          <include name="GoogleSearch"/>
+          <include name="click_element"/>
+          <include name="checkTitle"/>
         </methods>
-      </class> <!-- RegresstionTestCases.TestGoogleSearchObjects -->
+      </class> <!-- RegresstionTestCases.Groups -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
