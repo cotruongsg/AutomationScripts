@@ -1,14 +1,13 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Parallel test suite" parallel="classes" thread-count="2">
-  <test name="FirefoxTest">
-  <parameter name="browser" value="Firefox"/>
-  	<groups>
-  		<run>
-  			<include name ="demo.*"/>
-  		</run>
-  	</groups>  
-    <classes>
-      <class name="RegresstionTestCases.Groups"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Test Suite" verbose="5">
+
+<parameter name="OS" value="Windows"/>
+<parameter name="browser" value="Chrome"/>
+
+  <test name="Extent Report Test">
+   <classes>
+     <class name="ExtentReport.BasicExtentReport"/>
     </classes>
   </test>
 </suite>

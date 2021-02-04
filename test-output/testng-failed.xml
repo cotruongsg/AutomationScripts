@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="classes" name="Failed suite [Parallel test suite]">
-  <parameter name="browser" value="Firefox"/>
-  <test parallel="classes" name="FirefoxTest(failed)">
-    <parameter name="browser" value="Firefox"/>
-    <groups>
-      <run>
-        <include name="demo.*"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Main Test Suite]" guice-stage="DEVELOPMENT" verbose="5">
+  <parameter name="OS" value="Windows"/>
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="Extent Report Test(failed)" verbose="5">
     <classes>
-      <class name="RegresstionTestCases.Groups">
+      <class name="ExtentReport.BasicExtentReport">
         <methods>
-          <include name="click_element" invocation-numbers="0"/>
+          <include name="testCase4"/>
+          <include name="getResult"/>
+          <include name="testCase5"/>
+          <include name="startReport"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- RegresstionTestCases.Groups -->
+      </class> <!-- ExtentReport.BasicExtentReport -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
-</suite> <!-- Failed suite [Parallel test suite] -->
+  </test> <!-- Extent Report Test(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->

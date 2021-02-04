@@ -1,41 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="6" passed="3" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-02T22:20:06Z" name="Parallel test suite" finished-at="2021-02-02T22:20:24Z" duration-ms="18044">
+  <suite started-at="2021-02-04T01:36:22Z" name="Main Test Suite" finished-at="2021-02-04T01:36:22Z" duration-ms="672">
     <groups>
-      <group name="demo1">
-        <method signature="Groups.checkTitle(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" name="checkTitle" class="RegresstionTestCases.Groups"/>
-      </group> <!-- demo1 -->
-      <group name="demo2">
-        <method signature="Groups.click_element(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" name="click_element" class="RegresstionTestCases.Groups"/>
-      </group> <!-- demo2 -->
     </groups>
-    <test started-at="2021-02-02T22:20:06Z" name="FirefoxTest" finished-at="2021-02-02T22:20:24Z" duration-ms="18044">
-      <class name="RegresstionTestCases.Groups">
-        <test-method signature="checkTitle(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" started-at="2021-02-02T14:20:06Z" name="checkTitle" finished-at="2021-02-02T14:20:15Z" duration-ms="9043" status="PASS">
+    <test started-at="2021-02-04T01:36:22Z" name="Extent Report Test" finished-at="2021-02-04T01:36:22Z" duration-ms="672">
+      <class name="ExtentReport.BasicExtentReport">
+        <test-method is-config="true" signature="startReport(java.lang.String, java.lang.String)[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="startReport" finished-at="2021-02-04T01:36:22Z" duration-ms="208" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method signature="click_element(java.lang.String)[pri:0, instance:RegresstionTestCases.Groups@2002fc1d]" started-at="2021-02-02T14:20:15Z" name="click_element" finished-at="2021-02-02T14:20:24Z" duration-ms="8943" status="PASS">
+        </test-method> <!-- startReport -->
+        <test-method signature="testCase1()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="testCase1" finished-at="2021-02-04T01:36:22Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase1 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="getResult" finished-at="2021-02-04T01:36:22Z" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Firefox]]>
+                <![CDATA[[TestResult name=testCase1 status=SUCCESS method=BasicExtentReport.testCase1()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- click_element -->
-      </class> <!-- RegresstionTestCases.Groups -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- Parallel test suite -->
+        </test-method> <!-- getResult -->
+        <test-method signature="testCase2()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="testCase2" finished-at="2021-02-04T01:36:22Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase2 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="getResult" finished-at="2021-02-04T01:36:22Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase2 status=SUCCESS method=BasicExtentReport.testCase2()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testCase3()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="testCase3" finished-at="2021-02-04T01:36:22Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase3 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="getResult" finished-at="2021-02-04T01:36:22Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase3 status=SUCCESS method=BasicExtentReport.testCase3()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testCase4()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="testCase4" finished-at="2021-02-04T01:36:22Z" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at ExtentReport.BasicExtentReport.testCase4(BasicExtentReport.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="getResult" finished-at="2021-02-04T01:36:22Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase4 status=FAILURE method=BasicExtentReport.testCase4()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="testCase5()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="testCase5" finished-at="2021-02-04T01:36:22Z" duration-ms="3" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this test with exception]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this test with exception
+at ExtentReport.BasicExtentReport.testCase5(BasicExtentReport.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase5 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="getResult" finished-at="2021-02-04T01:36:22Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCase5 status=SKIP method=BasicExtentReport.testCase5()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ExtentReport.BasicExtentReport@22ef9844]" started-at="2021-02-04T01:36:22Z" name="tearDown" finished-at="2021-02-04T01:36:22Z" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ExtentReport.BasicExtentReport -->
+    </test> <!-- Extent Report Test -->
+  </suite> <!-- Main Test Suite -->
 </testng-results>
