@@ -1,13 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Main Test Suite" verbose="5">
+<suite name="Log Suite Example" verbose="1">
+	<listeners>
+		<listener class-name="Lsnters.ListenerClass" />
+	</listeners>
 
-<parameter name="OS" value="Windows"/>
-<parameter name="browser" value="Chrome"/>
+	<test name="TestNG logs sample" preserve-order="true">
+		<classes>
+			<class name="Lsnters.LoggingClass">
+				<methods>
+					<include name="methodAddingNumbers" />
+					<include name="dividedByZero" />
+					<include name="methodSkip" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 
-  <test name="Extent Report Test">
-   <classes>
-     <class name="ExtentReport.BasicExtentReport"/>
-    </classes>
-  </test>
 </suite>
